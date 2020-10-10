@@ -56,6 +56,7 @@ formRoles.onsubmit = function(e) {
                 swal("Nuevo Vehiculo", objData.msg ,"success");
                 tableRoles.api().ajax.reload(function(){
                     ftnEditRol();
+                    fntDelRol();
                 });
             } else {
                 swal("Error", objData.msg , "error" );

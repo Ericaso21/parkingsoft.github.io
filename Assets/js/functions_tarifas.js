@@ -56,6 +56,7 @@ formTarifa.onsubmit = function(e) {
                 swal("Nuevo Tarifa", objData.msg ,"success");
                 tableTarifas.api().ajax.reload(function(){
                     ftnTpVehiculosTarifas();
+                    ftnEditTarifas();
                 });
             } else {
                 swal("Error", objData.msg , "error" );

@@ -51,6 +51,7 @@ formTipoVehiculo.onsubmit = function(e) {
                 swal("Nuevo Vehiculo", objData.msg ,"success");
                 tableTipoVehiculo.api().ajax.reload(function(){
                     ftnEditTpVehiculo();
+                    fntDelTipoVehiculo();
                 });
             } else {
                 swal("Error", objData.msg , "error" );
